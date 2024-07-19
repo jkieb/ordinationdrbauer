@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<!-- To be honest: I first tried everything by copy-pasting AI prompts, but that didn't work well. 
+Afterwards, I read that it is not legitimate altogether. 
+So, I took the existing code, read the good old Bootstrap documentation, and started playing around with the scaffold.
+After working the right way (which is much easier) I understood why you made this rule -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap und Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Titel -->
+    <title>Ordination Dr. Bauer</title>
+  </head>
+
+  <!-- Beginn der Website -->
+
+  <body>
+    <!-- Kopf -->
+
+    <header>
+      <!-- Navigation (created scaffold with GithubCopilot (short GC), deleted most of it and used Documentation-Ready-Code)-->
+      <div class="nav gray">
+        <div class="container row">
+          <a class="navbar-brand col white" href="#">Ordination Dr. Bauer</a>
+          <div class="nav-item col">
+            <a class="nav-link white" href="#start">Start</a>
+          </div>
+          <div class="nav-item col">
+            <a class="nav-link white" href="#projects">Das Team</a>
+          </div>
+          <div class="nav-item col">
+            <a class="nav-link white" href="#about">Behandlungen</a>
+          </div>
+          <div class="nav-item col">
+            <a class="nav-link white" href="#contact">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hauptteil-->
+
+    <main>
+      <!-- Start -->
+      <!-- Bild und Begrüßung -->
+      <section id="start">
+        <div class="container">
+          <div class="row">
+            <div id="Begrüßung" class="col text-center">
+              <p style="font-size: 30px">Willkommen zu meinr Ordination!</p>
+              <p></p>
+              <p style="font-size: 20px">
+                ًDa wir in unserer Arbeit eine ganzheitliche Sicht vom Menschen
+                vertreten, bieten wir Ihnen sowohl medizinische Hilfe als auch
+                Beratung und Behandlung.
+              </p>
+
+              <p style="font-size: 16px">
+                <i>
+                  <p style="color: red">
+                    Urlaub vom 29.Juli bis 16.August 2024
+                  </p>
+                  <p style="font-size: larger">
+                    Wir beabsichtigen NICHT in Pension zu gehen!
+                  </p>
+                  <p>
+                    Diese Info dient zur Klarstellung anders lautender Gerüchte.
+                  </p></i
+                >
+              </p>
+            </div>
+            <div id="Hinweistafel" class="col d-flex align-items-center">
+              <img
+                src="Hinweistafel.jpg"
+                class="img-fluid"
+                alt="Hinweistafel"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Persona -->
+
+      <section id="projects">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="display-4">Projekte</h2>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <img src="Dr. Bauer.png" class="card-img-top" alt="Project 1" />
+                <div class="card-body">
+                  <h2 class="card-title text-center">Dr. Bauer</h2>
+                  <div class="card-text">
+                    Arzt für Allgemeinmedizin, Führerschein-,
+                    Mutter-Kind-Pass-Untersuchung, Vorsorgemedizin,
+                    Fortbildungsdiplom der ÖÄK.
+                    <p></p>
+                  </div>
+                  <!-- <a href="#" class="btn btn-dark">Learn More</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="Masseur Schabbauer.png"
+                  class="card-img-top"
+                  alt="Project 2"
+                />
+                <div class="card-body">
+                  <h2 class="card-title text-center">Masseur</h2>
+                  <p class="card-text">
+                    Wolfgang Schabbauer massiert hier in der Ordination und
+                    freut sich, wenn auch Sie Interesse für sein Tun zeigen. Sie
+                    erreichen ihn persönlich unter Tel-Nr.: 0664 / 46 31 031
+                  </p>
+                  <!-- <a href="#" class="btn btn-dark">Learn More</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="Frau Schlager.png"
+                  class="card-img-top"
+                  alt="Project 3"
+                />
+                <div class="card-body">
+                  <h2 class="card-title text-center">
+                    Frau Schlager Petra Sprechstundenhilfe
+                  </h2>
+                  <p class="card-text">
+                    Hilft Ihnen gerne bei der Terminvereinbarung und bei Fragen
+                    rundum die Ordination.
+                  </p>
+                  <!-- <a href="#" class="btn btn-dark">Learn More</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Informationen über das Team-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center">Behandlungen</h2>
+          </div>
+        </div>
+        <!-- Zeile für die erste Karte -->
+        <div class="card-body mb-3">
+          <h5 class="card-title">Arzt für Allgemeinmedizin</h5>
+          <div class="card-text">
+            Führerschein-, Mutter-Kind-Pass-Untersuchung, Vorsorgemedizin,
+            Fortbildungsdiplom der ÖÄK.<br />
+            Physikalische Behandlungen - Kurzwelle, Ultraschall, Munari,
+            Strombehandlungen<br />
+            Weitere Leistungen - Neuraltherapie (Schmerztherapie mit
+            Lokalanästhetika), Diabetologie, Impfungen, Ozontherapie (nur
+            Eigenblutinjektionen), kleine Chirurgie, Lebensstilmedizin,
+            Infusionen, Ernährungsberatung.
+          </div>
+        </div>
+        <!-- Zeile für die zweite Karte -->
+        <div class="card-body mb-3">
+          <h5 class="card-title">Massage</h5>
+          <div class="card-text">
+            Tuina-Anmo, Tiefenmassage nach Dr. Marnitz, Klassische
+            Ganzkörpermassage, Klassische Teilmassage, Fußreflexzonen-Massage,
+            Akupunktur-Meridian-Massage nach Penzel, Wirbelsäulenbehandlung nach
+            Dorn-Breuss, Laserbehandlung, Lymphdrainage nach Vodder,
+            Bindegewebsmassage, Segmentmassage, Sportmassage, Shiatsu -
+            Ganzkörperbehandlung.
+          </div>
+        </div>
+        <!-- Zeile für die dritte Karte -->
+        <!-- <div class="card-body mb-3">
+          <h5 class="card-title">Ready für die nächste Challenge</h5>
+          <div class="card-text">
+            Ich bin immer auf der Suche nach neuen Herausforderungen und freue
+            mich darauf, mit dir zusammenzuarbeiten! 💪😊
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- I first attempted to create the footer using mostly AI, but that didn't go well. 
+     So, I read about columns and flexbox and made the following with only a litte help from GC :) -->
+    <footer id="contact" class="black-border mb-5 mx-auto" style="width: 95%">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Zögern Sie nicht uns zu kontaktieren</h2>
+            <p>Tel.: 259 83 55</p>
+          </div>
+          <div class="col">
+            <h2>Adresse</h2>
+            <p>1210 Wien, Herzmanovsky-Orlando-Gasse 1/3/3</p>
+          </div>
+          <div class="col">
+            <img src="Karte.jpg" class="card-img-top" alt="Project 2" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="text-center">© 2024 Jakob Iebed</p>
+      </div>
+    </footer>
+  </body>
+</html>
